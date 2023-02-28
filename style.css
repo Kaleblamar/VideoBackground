@@ -1,6 +1,11 @@
 /* Importing/Linking to the Nunito Google Font */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
 
+:root {
+  --white: #fff;
+  --grey: #4b5163;
+}
+
 body {
   font-family: "nunito", sans-serif;
   line-height: 1.5;
@@ -58,4 +63,36 @@ video {
   color: #fff;
   z-index: 2;
   text-align: center;
+}
+#click {
+  /* Inline-Block allows you to set top and bottom margin as well as width and height. this is not the case for Inline */
+  display: inline-block;
+  margin-top: 25px;
+  border: 2px solid var(--white);
+  padding: 10px 30px;
+  background-color: var(--grey);
+  color: var(--white);
+  border-radius: 10px;
+  font-size: 20px;
+  opacity: 0.8;
+}
+#click:hover {
+  transform: scale(0.95);
+}
+#about {
+  padding: 50px;
+  text-align: center;
+}
+#about p {
+  font-size: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+#about h2 {
+  margin: 40px 0;
+  color: var(--grey);
+}
+i {
+  font-size: 3rem;
+  margin: 0 10px;
 }
